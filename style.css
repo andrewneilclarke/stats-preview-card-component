@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  background: hsl(244, 38%, 16%);
+  width: 70vw;
+  height: 55vh;
+  display: flex;
+  border-radius: 10px;
+}
+.card-container .card-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4.5em;
+  padding-left: 4.5em;
+  padding-right: 6em;
+}
+
+.card-container .card-1 .p-text {
+  color: hsl(277, 64%, 61%);
+}
+.card-container .card-1 .paragraph {
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+  line-height: 1.7;
+  font-size: small;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-container .card-1 .stats {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  justify-self: flex-end;
+  margin-top: 3.5em;
+}
+.card-container .card-1 .stats .stat-1 h2 {
+  text-transform: lowercase;
+}
+.card-container .card-1 .stats h2 {
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.card-container .card-1 .stats p {
+  font-size: x-small;
+  letter-spacing: 2px;
+  color: rgb(188, 188, 189);
+}
+
+.card-container .card-2 {
+  width: 50%;
+  background: url("images/image-header-desktop.jpg") no-repeat center center /
+    cover;
+}
+.card-container .card-2 .card-grad {
+  position: absolute;
+  top: inherit;
+  left: inherit;
+  width: 35%;
+  height: 55%;
+  background: rgba(150, 20, 231, 0.5);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+
+@media (max-width: 1300px) {
+  .card-container .card-1 .stats {
+    margin-top: 20px;
+  }
+  .card-container .card-1 .paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1170px) {
+  .card-container .card-1 {
+    padding-top: 3.5em;
+    padding-left: 3.5em;
+    padding-right: 5em;
+  }
+}
+
+@media (max-width: 1038px) {
+  .card-container {
+    width: 70vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card-container .card-1 {
+    width: 70vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+  }
+  .card-container .card-2 {
+    width: 70vw;
+    height: 60vh;
+    background: url("images/image-header-mobile.jpg") no-repeat center center /
+      cover;
+  }
+  .card-container .card-2 .card-grad {
+    width: 70vw;
+    height: 60vh;
+    background: rgba(150, 20, 231, 0.5);
+  }
+  .card-container .card-1 .stats {
+    flex-direction: column;
+    /* justify-content: space-between;
+    text-transform: uppercase;
+    justify-self: flex-end;
+    margin-top: 3.5em; */
+  }
+}
